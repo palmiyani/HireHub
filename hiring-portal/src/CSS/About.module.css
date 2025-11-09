@@ -1,0 +1,92 @@
+.aboutContainer {
+  padding: 40px 20px;
+  background: #f8fbff;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.header h1 {
+  font-size: 2.8rem;
+  color: #0a4d8c;
+}
+
+.header h1 span {
+  color: #4e9ff5;
+}
+
+.header p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.featureCard {
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.featureCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+.cardTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.featureImage {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.icon {
+  font-size: 30px;
+  color: #4e9ff5;
+}
+
+.cardContent h2 {
+  font-size: 1.3rem;
+  margin: 15px 0 10px;
+  color: #0a4d8c;
+}
+
+.cardContent p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.cardContent ul {
+  padding-left: 20px;
+  list-style: none;
+}
+
+.cardContent li {
+  margin-bottom: 8px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.cardContent li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #4e9ff5;
+}

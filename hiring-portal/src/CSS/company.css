@@ -1,0 +1,32 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+.company-registration-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.company-registration-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+.basicinfo {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.stepper-buttons {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-around ;
+}

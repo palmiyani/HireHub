@@ -1,0 +1,296 @@
+/* Navbar Container */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  color: #4a90e2;
+  padding: 0.5rem 2rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: all 0.3s ease;
+  height: 70px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+/* Header Section with Logo */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* Logo Container */
+.hirehublogo {
+  display: flex;
+  align-items: center;
+}
+
+/* Logo Image */
+.logoimg {
+  height: 40px;
+  width: auto;
+  transition: transform 0.3s ease;
+}
+
+.logoimg:hover {
+  transform: scale(1.05);
+}
+
+/* Icons Container */
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-left: auto;
+}
+
+/* Individual Icon Items */
+.icon {
+  position: relative;
+  cursor: pointer;
+  padding: 0.5rem 0.8rem;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.icon a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #5c6b7f;
+  font-size: 0.85rem;
+  gap: 0.25rem;
+}
+
+.icon svg {
+  color: #4a90e2;
+}
+
+.icon:hover {
+  background-color: #f5f9ff;
+  transform: translateY(-2px);
+}
+
+.icon:hover a {
+  color: #4a90e2;
+}
+
+/* Active Tab Styling */
+.active {
+  background-color: #f0f7ff;
+  font-weight: 600;
+  position: relative;
+}
+
+.active a {
+  color: #4a90e2;
+}
+
+.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #4a90e2;
+  border-radius: 2px 2px 0 0;
+}
+
+/* Employer/Post Job Button */
+.posting {
+  display: flex;
+  align-items: center;
+  background-color: #4a90e2;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  margin-left: auto;
+  gap: 0.5rem;
+  box-shadow: 0 2px 5px rgba(74, 144, 226, 0.2);
+}
+
+.posting:hover {
+  background-color: #3a7bc8;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(74, 144, 226, 0.3);
+}
+
+.postingIcon {
+  font-size: 1rem;
+}
+
+/* Dropdown Menu */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown .icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #5c6b7f;
+  cursor: pointer;
+}
+
+.dropdownContent {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 180px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 0.5rem;
+  border: 1px solid #f0f0f0;
+}
+
+.dropdown:hover .dropdownContent {
+  display: block;
+  animation: fadeIn 0.3s ease;
+}
+
+.dropdownContent .icon a {
+  color: #5c6b7f;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.dropdownContent .icon a span {
+  white-space: nowrap;
+}
+
+.dropdownContent .icon:hover {
+  background-color: #f5f9ff;
+  transform: none;
+}
+
+.dropdownContent .icon:hover a {
+  color: #4a90e2;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  color: #4a90e2;
+}
+
+/* Toast Container Styling */
+:global(.Toastify__toast) {
+  border-radius: 4px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px) translateX(-50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) translateX(-50%);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .navbar {
+    padding: 0.5rem 1rem;
+    flex-direction: column;
+    height: auto;
+  }
+  
+  .header {
+    width: 100%;
+    padding: 0.5rem 0;
+  }
+  
+  .hamburger {
+    display: block;
+  }
+  
+  .icons {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5rem;
+    padding: 0.5rem 0;
+    margin-top: 0.5rem;
+  }
+  
+  .showMenu {
+    display: flex;
+    animation: slideDown 0.3s ease;
+  }
+  
+  .icon {
+    width: 100%;
+    text-align: center;
+    padding: 0.75rem 0;
+  }
+  
+  .icon a {
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  
+  .posting {
+    width: 100%;
+    justify-content: center;
+    margin: 0;
+  }
+  
+  .dropdown {
+    width: 100%;
+  }
+  
+  .dropdownContent {
+    position: static;
+    background-color: #f9fbff;
+    box-shadow: none;
+    transform: none;
+    margin-top: 0;
+    width: 100%;
+    border: none;
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  
+  .dropdownContent .icon a {
+    color: #5c6b7f;
+    padding: 0.5rem;
+  }
+  
+  .dropdownContent .icon:hover {
+    background-color: #f0f7ff;
+  }
+  
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}

@@ -1,0 +1,164 @@
+.uploadForm {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin: 40px auto;
+    margin-top: 60px;
+    max-width: 70%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.uploadForm h2 {
+    text-align: center;
+    font-size: 26px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.fileInputContainer {
+    border: 2px dashed #2c3e50;
+    /* Dashed border for drag and drop area */
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    transition: border-color 0.3s;
+    cursor: pointer;
+    /* Change cursor to indicate clickable area */
+}
+
+.fileInputContainer:hover {
+    border-color: #2c3e50;
+    /* Darker blue on hover */
+}
+
+.fileInputLabel {
+    display: block;
+    color: #34495e;
+    font-weight: 600;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.fileInput {
+    display: none;
+}
+
+.loader {
+    text-align: center;
+    font-size: 18px;
+    color: #2980b9;
+    /* Color for loading text */
+    margin-top: 15px;
+}
+
+.submitButton {
+    display: block;
+    width: 40%;
+    padding: 12px 0;
+    background-color: #2980b9;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 0;
+    margin-top: 30px;
+}
+
+.submitButton:hover {
+    background-color: #0056b3;
+    /* Darker blue on hover */
+}
+
+.submitButton:disabled {
+    background-color: #ccc;
+    /* Light grey when disabled */
+    cursor: not-allowed;
+    /* Not-allowed cursor for disabled state */
+}
+
+.resultContainer {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #e9ecef;
+    width: 70%;
+}
+
+.resultContainer h3 {
+    margin: 0;
+    color: #333;
+}
+
+.resultContainer {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 30px;
+    margin: 20px auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: transform 0.2s;
+    margin-bottom: 60px;
+}
+
+.resultContainer:hover {
+    transform: scale(1.02);
+}
+
+.resultTitle {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    text-align: center;
+}
+
+.resultItem {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.resultLabel {
+    font-weight: bold;
+    color: #34495e;
+    font-size: 16px;
+}
+
+.resultValue {
+    font-size: 20px;
+    color: #2980b9;
+    margin-top: 5px;
+}
+
+.resultKeywords {
+    list-style-type: none;
+    padding: 0;
+}
+
+.keywordItem {
+    background-color: #e1f5fe;
+    border-radius: 20px;
+    padding: 8px 15px;
+    margin: 5px 10px;
+    display: inline-block;
+    font-size: 14px;
+    color: #00796b;
+}
+
+.noKeywords {
+    color: #7f8c8d;
+    font-style: italic;
+}
+
+.resultSummary {
+    margin-top: 10px;
+    line-height: 1.6;
+    color: #444;
+    font-size: 15px;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}

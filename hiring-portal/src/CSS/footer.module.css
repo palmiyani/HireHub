@@ -1,0 +1,183 @@
+.footer {
+    background-color: #342d3b;
+    color: #fff;
+    padding: 50px 0;
+    width: 100%;
+}
+
+.footerContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.footerBottom {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1em;
+    padding-top: 10px;
+    border-top: 1px solid #555;
+}
+
+.footerColumn {
+    flex: 1;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.footerColumn h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.footerColumn ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footerColumn ul li {
+    margin-bottom: 8px;
+}
+
+.footerColumn ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footerColumn ul li a:hover {
+    color: #007bff;
+}
+
+.socialIcons {
+    display: flex;
+    gap: 10px;
+}
+
+.socialIcons a {
+    color: #fff;
+    font-size: 1.5em;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.socialIcons .linkedin:hover {
+    color: #0072b1;
+    transform: scale(1.2);
+}
+
+.socialIcons .github:hover {
+    transform: scale(1.1);
+}
+
+.socialIcons .twitter:hover {
+    color: #1DA1F2;
+    transform: scale(1.2);
+}
+
+.socialIcons .facebook:hover {
+    color: #4267B2;
+    transform: scale(1.2);
+}
+
+.socialIcons .instagram:hover {
+    color: #E1306C;
+    transform: scale(1.2);
+}
+
+.footerColumn h4 {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    color: white;
+}
+
+.subscribeForm {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    min-width: 300px;
+}
+
+.subscribeForm input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    min-width: 250px;
+}
+
+.subscribeForm button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.subscribeForm button:hover {
+    background-color: #0056b3;
+}
+
+.message {
+    margin-top: 10px;
+    color: rgb(32, 238, 32);
+    font-size: 1.2rem;
+}
+
+.textBlack {
+    color: white;
+    font-size: 28px;
+}
+
+.alignContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+}
+
+@media (max-width: 768px) {
+    .footerContainer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footerColumn {
+        margin-right: 0;
+    }
+
+    .footerColumn>h3 {
+        font-size: 1.5rem;
+    }
+
+    .footerColumn h4 {
+        font-size: 1.3rem;
+    }
+
+    .socialIcons {
+        justify-content: center;
+    }
+
+    .subscribeForm {
+        flex-direction: column;
+        width: 50%;
+    }
+
+    .subscribeForm input,
+    .subscribeForm button {
+        width: 50%;
+        min-width: 170px;
+        margin: 1px 0;
+    }
+}
