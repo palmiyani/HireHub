@@ -155,17 +155,6 @@ We welcome contributions from the community! To contribute, please follow these 
 
 ---
 
-## Contact 👤
-
-### Project Admin⚡
- 
-<table>
-<tr>
-<td align="center"><a href="https://github.com/Yashgabani845"><img src="https://avatars.githubusercontent.com/u/127788321?v=4" width=150px height=150px /></a></br> <h4 style="color:red;">Yash Niteshbhai Gabani</h4>
- <a href="https://www.linkedin.com/in/yash-gabani-527886258/"><img src="https://img.icons8.com/fluency/2x/linkedin.png" width="32px" height="32px"></img></a>
-</td>
-</tr>
-</table>
 
 
 
