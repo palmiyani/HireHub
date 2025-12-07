@@ -22,8 +22,6 @@ Check the project structure here [Project Structure](PROJECT_STRUCTURE.md)
 <!--line-->
 
 
-
-
 ## Features 🌟
 
 ### For Job Seekers:
